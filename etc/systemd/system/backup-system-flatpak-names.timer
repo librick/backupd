@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup Non-System Flatpak App Names
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=12h
+
+[Install]
+WantedBy=default.target
+

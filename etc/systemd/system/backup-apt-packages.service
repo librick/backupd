@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup Apt Package Names
+
+[Service]
+ExecStartPre=/bin/mkdir -p /usr/local/share/backups/
+ExecStart=/usr/local/sbin/backup-apt-packages.sh
+
+[Install]
+WantedBy=default.target
+

@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup Non-System Flatpak App Names
+
+[Service]
+ExecStart=/usr/local/bin/backup-user-flatpak-names.sh
+
+[Install]
+WantedBy=default.target
+
